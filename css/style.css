@@ -1,0 +1,172 @@
+/*selector/etiqueta {
+    propiedad: valor;
+}*/
+
+/*
+!important= Pisa por sobre las clases anteriores.
+
+id=Pisa a la clase y la etiqueta y no permite que se reutilice. Ej: PATENTE DE AUTO, DNI
+Llamado= #
+
+class=
+
+/*Estilos Presets*/
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red*/
+    list-style: none;
+}
+
+#body {
+    min-width: 320px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul {
+    color: none;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+body {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+
+@media (min-width: 1024px) {
+body {
+    min-width: 1440px;
+    margin: auto;
+    font-size: 20px;
+    padding: 30px;
+}
+
+img {
+    width: 30%;
+}
+}
+
+
+/*Titulos*/
+h1{
+    border: 5px ridge gray;
+    color: rgb(116, 4, 71);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    border: 5px ridge black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: none;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: rgb(3, 87, 52);
+    text-decoration: none;
+    display: block;
+}
+
+section img{
+    display: flex;
+    float: left;
+    padding: 0.5rem;
+    border: 5px ridge black;
+}
+
+article h2{
+    text-align: right;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0.5rem;
+    color: black;
+}
+
+article p{
+    text-align: right;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 0.5rem;
+    color: black;
+}
+
+.contenedor-img , .contenedor-img1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border: 5px;
+    padding: 0.5rem;
+}
+
+
+#footer {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.contenedor-footer ul {
+    display: flex;
+    margin: 0 15px;
+}
+
+.contenedor-footer a {
+    text-decoration: none;
+    display: block;
+}
+
+.copyrights p{
+    text-align: end;
+    color: rgb(120, 34, 34);
+    padding: 0.5rem;
+}
+
+form action{
+    color: whitesmoke;
+}
