@@ -7,10 +7,18 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
 
-    <!--CSS-->
+        <!--Link Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Libreria Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+    <!--CSS Estilo propio-->
         <link rel="stylesheet" href="css/style.css">
         <title>MusicHouse</title>
-    <!-- Media Querty
+    <!--  ESTILOS DE PANTALLAS 
+        Media Querty
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -78,75 +86,87 @@
     <body bgcolor="gray"></body>
     <body id="body">
     <!-- Estructura n° 1 Encabezado-->
-    <header>
+
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid w-25" src="https://wallpapercave.com/wp/wp8973658.jpg" alt="Logo de la Página web"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="pages/imagenes.html">Salas</a>
+                <a class="nav-link" href="pages/videos.html">Videos</a>
+                <a class="nav-link" href="pages/acerca_de.html">Nosotros</a>
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--<header id="header">
         <div class="container">
                 <div class="columna1">
-                    <a href="." class="logo"><img src="https://wallpapercave.com/wp/wp8973658.jpg" alt="logo de la pagina web" width="80" height="60"></a>
+                    <a href="." class="logo"><img src="https://wallpapercave.com/wp/wp8973658.jpg" alt="logo de la pagina web" width="120px" height="100px"></a>
                 </div>
-                <nav class="navbar">
+                <nav id="navbar">
                     <div class="columna2">
                         <div class="navigation-box">
                             <ul>
                                 <div class="box1">
-                                    <li class="current-menu-item">
-                                        <a href="#">Home</a>
-                                    </li>
+                                    <li class="current-menu-item"><a href="#">Home</a></li>
                                 </div>
                                 <div class="box2">
-                                    <li>
-                                        <a href="pages/imagenes.html">Salas</a>
-                                    </li>
+                                    <li><a href="pages/imagenes.html">Salas</a></li>
                                 </div>
                                 <div class="box3">
-                                    <li>
-                                        <a href="pages/videos.html">Videos</a>
-                                    </li>
+                                    <li><a href="pages/videos.html">Videos</a></li>
                                 </div>
                                 <div class="box4">
-                                    <li>
-                                        <a href="pages/acerca_de.html">Info</a>
-                                    </li>
+                                    <li><a href="pages/acerca_de.html">Info</a></li>
                                 </div>
                                 <div class="box5">
-                                    <li>
-                                        <a href="pages/contacto.html">Contacto</a>
-                                    </li>
+                                    <li><a href="pages/contacto.html">Contacto</a></li>
                                 </div>
                             </ul>
                         </div>
                     </div>
                 </nav>
         </div>
-    </header>
+    </header>-->
     <!-- Estructura n° 2 Contenido-->
-<main>
+<main id="main">
     <h1>Bienvenidos a MusicHouse</h1>
     <nav>
-        <div class="container">
-            <section>
-                <img src="https://img.freepik.com/fotos-premium/banda-rock-actuando-o-ensayando-antiguo-almacen_941600-6137.jpg" alt="imagen de una banda ensayando" width="800" height="500">
-                <article>
+        <div class="container-boxPadre">
+                <img src="https://img.freepik.com/fotos-premium/banda-rock-actuando-o-ensayando-antiguo-almacen_941600-6137.jpg" alt="imagen de una banda ensayando" width="800px" height="600px">
+                <article class="container-box1">
                     <h2>Somos todo lo que estas buscando</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum facilis consectetur tenetur eveniet eum placeat, earum voluptatibus facere blanditiis provident? Cumque veritatis vero atque aspernatur mollitia, cupiditate numquam provident officiis possimus non distinctio quia. Soluta, sunt possimus minima facere, nostrum sequi dolorum tenetur, animi eius excepturi perferendis et voluptas?</p>
                 </article>
-            </section>
         </div>
     </nav>
 </main>
     <!-- Estructura n° 3 Pie de Página-->
     <footer id="footer">
-        <div class="contenedor-footer">
-            <div class="copyrights">
-                <p>Copyright © 2025 MusicHouse - Desarrollo:</p>
-            </div>
+            <section class="footerCopy">
+                <p>Copyright © 2025 MusicHouse</p>
+                <span>Desarrollado por: Jonathan Cañiza</span>
+            </section>
+            <section class="footerRedes">
             <h3>Visita nuestras redes sociales</h3>
             <ul>
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">X</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
-                <li><a href="#" target="_blank">WhatSapp</a></li>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
             </ul>
+            </section>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
-</html>
+    </html>
