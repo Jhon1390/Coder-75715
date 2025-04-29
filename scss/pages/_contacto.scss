@@ -1,0 +1,28 @@
+/* ESTILO DE PAGINA CONTACTO UTILIZANDO FLEX*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 50%;
+    height: 150px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}

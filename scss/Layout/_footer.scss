@@ -1,0 +1,31 @@
+/* ESTILO FOOTER UTILIZANDO FLEX*/
+
+#footer {
+    width: 100%;
+    min-height: 18vh;
+    display: flex;
+    justify-content: space-evenly;
+    /*flex-direction: column-reverse;
+    align-content: flex-end;
+    align-items: flex-end;*/
+    background-color: rgb(222, 76, 76);
+}
+
+.footerCopy {
+    align-content: center;
+}
+
+.footerRedes {
+    align-content: center;
+    text-align: center;
+}
+
+.footerRedes ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3 {
+    text-decoration: underline;
+}

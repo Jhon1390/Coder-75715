@@ -1,0 +1,9 @@
+/* ESTILO PARA LA PAGINA DE IMAGENES UTILIZANDO GRID*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+}

@@ -1,0 +1,47 @@
+#header {
+    justify-content: center;
+}
+
+#navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    display: flex;
+    width: 50%;
+    margin: 0 15px;
+    column-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a {
+    color: rgb(10, 33, 135);
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    transition: 1s;
+}
+
+/* CON :HOVER DOY SOMBRA AL NAV */
+
+#navbar a:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 3px 7px rgb(132, 71, 71);
+    transition: 1s;
+}
+
+/* CON :FOCUS HAGO QUE CUANDO SE PRECIONE TAB EN EL NAV CAMBIE DE COLOR */
+
+#navbar a:focus {
+    color: seagreen;
+}

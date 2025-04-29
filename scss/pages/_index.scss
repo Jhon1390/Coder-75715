@@ -1,0 +1,32 @@
+/* ESTILO DE PAGINA DE INICIO */
+
+
+
+h1 {
+    border: 5px ridge gray;
+    color: rgb(116, 4, 71);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-boxPadre {
+    display: flex;
+}
+
+img {
+    padding: 5px;
+    float: left;
+}
+
+
+article h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+article p {
+    text-align: right;
+    font-style: italic;
+}
