@@ -6,7 +6,7 @@ h1 {
     border: 5px ridge gray;
     color: rgb(116, 4, 71);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase ;
 }
 
 .container-boxPadre {
@@ -16,6 +16,7 @@ h1 {
 img {
     padding: 5px;
     float: left;
+    max-width: 100%;
 }
 
 
@@ -29,4 +30,10 @@ article h2 {
 article p {
     text-align: right;
     font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .container-boxPadre {
+        flex-direction: column;
+    }
 }

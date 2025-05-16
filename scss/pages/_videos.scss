@@ -8,3 +8,9 @@
     justify-content: center;
     justify-items: center;
 }
+
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -100,7 +100,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* Import pages*/
+/* Import pages */
 /* ESTILO DE PAGINA DE INICIO */
 h1 {
   border: 5px ridge gray;
@@ -116,6 +116,7 @@ h1 {
 img {
   padding: 5px;
   float: left;
+  max-width: 100%;
 }
 
 article h2 {
@@ -130,6 +131,11 @@ article p {
   font-style: italic;
 }
 
+@media (max-width: 768px) {
+  .container-boxPadre {
+    flex-direction: column;
+  }
+}
 /* ESTILO PARA LA PAGINA DE IMAGENES UTILIZANDO GRID*/
 .grid-container {
   display: grid;
@@ -137,6 +143,7 @@ article p {
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   justify-content: center;
+  max-width: 100%;
 }
 
 /* ESTILO DE PAGINA DE VIDEOS UTILIZANDO GRID*/
@@ -149,6 +156,11 @@ article p {
   justify-items: center;
 }
 
+@media (max-width: 768px) {
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* ESTILO DE PAGINA ACERCA_DE */
 .acercaDe {
   text-align: center;
@@ -184,6 +196,23 @@ form input {
   cursor: pointer;
 }
 
+body {
+  font-size: 16px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 60px;
+  }
+}
 /*selector/etiqueta {
     propiedad: valor;
 }*/

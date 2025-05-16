@@ -15,6 +15,29 @@
 @use "pages/contacto";
 
 
+$breakpoints-movile: 480px;
+$breakpoints-tablet: 768px;
+$breakpoints-desktop: 1024px;
+
+body {
+    font-size: 16px;
+    padding: 20px;
+}
+
+@media (min-width: $breakpoints-tablet){
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
+
+@media (min-width: $breakpoints-desktop){
+    body{
+        font-size: 20px;
+        padding: 60px;
+    }
+}
+
 
 /*selector/etiqueta {
     propiedad: valor;
